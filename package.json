@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
     "react-router-dom": "^6.26.1"
-  }
+  },
+  "name": "mern-estate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
