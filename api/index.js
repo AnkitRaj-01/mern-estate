@@ -27,6 +27,7 @@ app.listen(3000, () => {
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
 
+
 //creating middleware
 app.use((err,req,res,next)=>{
     const statusCode =err.statusCode || 500;
