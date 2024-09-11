@@ -21,7 +21,7 @@ export default function SignUp() {
   
     // Frontend validation
     if (!formData.username || !formData.email || !formData.password) {
-      setError("All fields are required");
+      dispatch(signInFailure("All fields are required"));
       return;
     }
   
@@ -44,6 +44,7 @@ export default function SignUp() {
   
       setLoading(false);
       setError(null);
+      alert('Sign Up Successful✅');
       navigate('/sign-in');
     } catch (error) {
       setLoading(false);
