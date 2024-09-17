@@ -43,8 +43,9 @@ export default function SignUp() {
         return;
       }
   
-      setLoading(false);
+      setLoading(true);
       setError(null);
+      // setError(`data.message`)
       alert('Sign Up Successful✅');
       navigate('/sign-in');
     } catch (error) {

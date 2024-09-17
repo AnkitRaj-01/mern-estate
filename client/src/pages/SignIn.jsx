@@ -55,6 +55,7 @@ export default function SignIn() {
 
       dispatch(signInSuccess(data));
       navigate("/");
+      // alert(`Welcome ${data.body.user}`)
     } catch (error) {
       dispatch(signInFailure(error.message));
     }
