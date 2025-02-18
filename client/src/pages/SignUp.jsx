@@ -46,7 +46,7 @@ export default function SignUp() {
       setLoading(true);
       setError(null);
       // setError(`data.message`)
-      alert('Sign Up Successful✅');
+      alert('Sign Up Successful✅, Please SignIN');
       navigate('/sign-in');
     } catch (error) {
       setLoading(false);
@@ -74,5 +74,5 @@ export default function SignUp() {
       </div>
       {error && <p className='text-red-500'>{error}</p>}
     </div>
-  )
+  );
 }
